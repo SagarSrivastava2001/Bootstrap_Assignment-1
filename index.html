@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Assignment 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="first_section">
+        <div class="row">
+            <div class="col-6" style="background-color: black;">
+                <h1 class="heading">FORM</h1>
+            </div>
+            <div class="col-6" style="background-color: black;">
+                <h1 class="heading">TABLE</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- 2nd Row 1st Column -->
+        <div class="col-6" style="background-color: white;"> <br>
+            <h2> Student Registration Form </h2> 
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-borderless table-responsive" style="background-color: #7489b1;">
+                    <form>
+                        <tr>
+                            <td class="input_name"> <label class="control-label" for="name"> Name </label> </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td class="input_name">
+                                <label class="control-label" for="pno"> Phone No </label>
+                            </td>
+        
+                            <td>
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td class="input_name">
+                                <label class="control-label" for="dob"> Date of Birth </label>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <input type="date" class="form-control" id="DOB" aria-describedby="dobHelp" required>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <!-- Address -->
+                        <tr>
+                            <td class="input_name">
+                                <label class="control-label" for="address"> Address </label>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3" style="resize:none;"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <!-- Gender -->
+                        <tr>
+                            <td class="input_name">
+                                <label class="control-label" for="gender"> Gender </label>
+                            </td>
+        
+                            <td>
+                                <div class="form-group">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input radio-inline" name="gender" type="radio" value="male">
+                                    Male
+                                    </label>
+                                    <span style="visibility: hidden;">Hello</span>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input radio-inline" name="gender" type="radio" value="female">
+                                    Female
+                                    </label>
+        
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <!-- City -->
+                        <tr>
+                            <td class="input_name">
+                                <label class="control-label" for="city">City</label>
+                            </td>
+                            <td>
+                                <div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select City</option>
+                                        <option value="1">Delhi</option>
+                                        <option value="2">Bombay</option>
+                                        <option value="3">Kolkata</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <!-- Hobbies -->
+                        <tr>
+                            <td class="input_name">
+                                <label class="control-label" for="city">Hobbies</label>
+                            </td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+          <label class="form-check-label">Music</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
+          <label class="form-check-label">Sports</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something">
+          <label class="form-check-label">Reading</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check4" name="option4" value="something">
+          <label class="form-check-label">Travelling</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check5" name="option5" value="something">
+          <label class="form-check-label">Singing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="check6" name="option6" value="something">
+          <label class="form-check-label">Dancing</label> <br>
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <!-- Submit & Reset Buttons -->
+                        <tr>
+                            <td class="submit"><button class="btn btn-primary" type="submit">Submit</button></td>                            
+                            <td class="reset"><button class="btn btn-primary" type="reset">Reset</button></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+
+        <!-- 2nd Row 2nd Column -->
+        <div class="col-6" style="background-color: white;">
+            <br>
+            <h2 style="text-align: center;"> Student Records </h2>
+            <div class="table-responsive">
+                <table class="second_table table table-striped table-hover table-borderless table-responsive" style="background-color: #7489b1;">
+                    <thead>
+                        <tr class="second_table_heading">
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Phone No.</th>
+                            <th>Gender</th>
+                            <th>DOB</th>
+                            <th>Interests</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1)</td>
+                        <td>Amit Kumar</td>
+                        <td>9715234870</td>
+                        <td>Male</td>
+                        <td>24/03/1988</td>
+                        <td>
+                            <div>Music</div>
+                            <div>Sports</div>
+                            <div>Travelling</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2)</td>
+                        <td>Mohit Sharma</td>
+                        <td>7546239810</td>
+                        <td>Male</td>
+                        <td>03/08/1995</td>
+                        <td>
+                            <div>Singing</div>
+                            <div>Dancing</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3)</td>
+                        <td>Vinita Sharma</td>
+                        <td>8973213448</td>
+                        <td>Female</td>
+                        <td>17/11/1999</td>
+                        <td>
+                            <div>Reading</div>
+                            <div>Travelling</div>
+                            <div>Dancing</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4)</td>
+                        <td>Vivek Kumar</td>
+                        <td>8973212323</td>
+                        <td>Male</td>
+                        <td>18/04/2002</td>
+                        <td>
+                            <div>Travelling</div>
+                            <div>Dancing</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5)</td>
+                        <td>Aditi Rajput</td>
+                        <td>8973213553</td>
+                        <td>Female</td>
+                        <td>10/10/2000</td>
+                        <td>
+                            <div>Singing</div>
+                            <div>Dancing</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
